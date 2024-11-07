@@ -1,0 +1,348 @@
+/* HOME STYLES */
+
+body{
+    margin:0;
+    background-color: #222222;
+}
+
+p{
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.title-a{
+    text-decoration: none;
+}
+
+img{
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#seattle{
+    display: flex;
+    height: 183px;
+    width: 100vw;
+    background-image: url("../images/seattle.png");
+    background-color: #DAB06C;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-header {
+    display: block;
+    width: 100vw; 
+    height: 260px; 
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.banner-ms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 170px; 
+    background-color: #2e2e2e; 
+    border-top: 5px solid #2e2e2e; 
+    border-bottom: 5px solid #2e2e2e; 
+    position: relative;
+    margin-top: 50px;
+    margin-bottom:100px;
+    box-sizing: border-box; 
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%; 
+    height: 260px; 
+    background-color: #2e2e2e; 
+    border-top: 5px solid #2e2e2e; 
+    border-bottom: 5px solid #2e2e2e; 
+    position: relative;
+    margin-top: 225px;
+    box-sizing: border-box;
+}
+
+.banner-main{
+    display: block;
+    width: 100%; 
+    height: 385px; 
+    background-color: #2e2e2e;  
+    position: relative;
+    box-sizing: border-box; 
+    margin-bottom: 50px;
+}
+
+.banner-content {
+    display: block;
+    position: relative; 
+    width:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: #2e2e2e; 
+}
+
+.title{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    font-size: 4vw;
+    white-space: nowrap;
+}
+
+.resource-title{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    font-size: 175px;
+    white-space: nowrap;
+    
+    position: absolute;
+    top: -10%;
+    left: 2.5%;
+}
+
+.resource-title:hover, .title:hover, .food-information-header:hover, .food-information-link:hover{
+    color:#9e9e9e;
+}
+
+#food{
+    background-color:#DAB06C;
+}
+
+#housing{
+    background-color:#3F58C7;
+}
+
+#work{
+    background-color: #C7583F; 
+}
+
+#education{
+    background-color: #BB90D2;
+}
+
+#rehabilitation{
+    background-color: #B0D290;
+}
+
+#banner-header-home{
+    background-color: #2e2e2e; 
+    border-top: 5px solid #2e2e2e; 
+    border-bottom: 5px solid #2e2e2e; 
+}
+
+#banner-header-food{
+    background-color: #DAB06C;
+    border-top:5px solid #DAB06C;
+    border-bottom: 5px  solid #DAB06C;
+}
+
+#banner-header-housing{
+    background-color: #3F58C7;
+    border-top:5px solid #3F58C7;
+    border-bottom: 5px  solid #3F58C7;
+}
+
+#banner-header-work{
+    background-color: #C7583F;
+    border-top:5px solid #C7583F;
+    border-bottom: 5px  solid #C7583F;
+}
+
+#banner-header-education{
+    background-color: #BB90D2;
+    border-top:5px solid #BB90D2;
+    border-bottom: 5px  solid #BB90D2;
+}
+
+#banner-header-rehabilitation{
+    background-color: #B0D290;
+    border-top:5px solid #B0D290;
+    border-bottom: 5px  solid #B0D290;
+}
+
+.footer-text-title{
+    color:white;
+    font-size: 20px;
+    padding-left: 20px;
+    text-wrap:nowrap;
+}
+
+.footer-text{
+    color: #9e9e9e;
+    font-size: 20px;
+    padding-left: 60px;
+    text-wrap:nowrap;
+}
+
+/* FOOD STYLES */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.food-image-container, .food-information, .food-schedule{
+    display: inline-flex;
+    flex-direction: column;
+    background-color:#2e2e2e;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.food-image-container{
+    width: 33%;
+    min-width: 485px;
+    height: 610px;
+    margin-left: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-information{
+    flex-direction: column;
+    width: 33%;
+    min-width: 470px;
+    height: 610px;
+    margin-left: 40px;
+}
+
+
+.food-schedule{
+    width: 16%;
+    min-width: 235px;
+    height: 610px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1450px){
+    /*.food-information{
+        margin-right: auto;
+    }*/
+    .food-schedule{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1060px){
+    .food-information{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 855px){
+    .food-image-container{
+        margin-left: 0px;
+    }
+}
+
+#food-body, #food-html{
+    height: 3763px;
+    margin: 0;
+    padding: 0;
+} 
+
+.food-information-header, .food-information-item, .food-information-content, .food-information-link{
+    display: block;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+
+.food-information-header{
+    font-size: 30px;
+    margin-bottom: 0.93%;
+}
+
+.food-link{
+    text-decoration: none;
+}
+
+.food-information-item{
+    font-size: 25px;
+    margin-bottom: 0.86%;
+}
+
+.food-information-content{
+    font-weight:400;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.food-information-link{
+    font-weight:400;
+    font-size: 20px;
+    margin-top:auto;
+    padding-bottom: 20px;
+}
+
+.food-image{
+    width: 95%;
+}
+
+/* ALL */
+.food-schedule-day-grey, .food-schedule-day-white, .food-schedule-time-white, .food-schedule-time-grey, .food-schedule-day-first-grey, .food-schedule-day-first-white{
+    font-weight:400;
+}
+
+/* DAY */
+.food-schedule-day-white, .food-schedule-day-grey{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+/* TIME */
+.food-schedule-time-white, .food-schedule-time-grey{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* WHITE */
+.food-schedule-day-white, .food-schedule-time-white{
+    color: white;
+}
+
+/* BLACK */
+.food-schedule-day-grey, .food-schedule-time-grey{
+    color: #9E9E9E;
+}
+
+/* First */
+
+.food-schedule-day-first-grey{
+    color: #9E9E9E;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.food-schedule-day-first-white{
+    color: white;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
